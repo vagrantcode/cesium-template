@@ -6,9 +6,10 @@ const baseWebpackConfig = require('./webpack.base.config')
 const webpackConfig = merge.merge(baseWebpackConfig, {
     mode: "production",
     output: {
-        filename: 'bundle.js',//定义输出文件名称
+        filename: 'public/bundle.js',//定义输出文件名称
         path: path.resolve(__dirname, '../dist'),//定义输出文件路径
-        publicPath: "./"
+        publicPath: "../",
+        assetModuleFilename: "public/[hash][ext]"
     }
 })
 
