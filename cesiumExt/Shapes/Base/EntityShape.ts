@@ -5,7 +5,6 @@ abstract class EntityShape extends Shape {
     protected constructor(viewer: Viewer) {
         super();
         this.viewer = viewer
-        this.draw(viewer)
     }
 
     abstract entityConfig: any

@@ -2,8 +2,8 @@ import {createWorldTerrain} from "cesium";
 import {Cesium3DTileset} from "cesium";
 import {Viewer} from "cesium";
 import {IActivity} from "./Activity";
-
-
+import './Utils/AdaptorGltf'
+import './Event/Click'
 
 export default class CesiumExt {
     static activities: Array<IActivity> = []
