@@ -1,5 +1,7 @@
 import React from "react";
 import {Viewer} from "cesium";
+import CesiumExt from "../cesiumExt/CesiumExt";
+import DrawExample from "../cesiumExt/Activites/DrawExample";
 
 export default class CesiumApp extends React.Component {
     render() {
@@ -9,7 +11,8 @@ export default class CesiumApp extends React.Component {
     componentDidMount() {
 
         setTimeout(() => {
-            let viewer = new Viewer('cesiumContainer')
+            new DrawExample()
+            let viewer = new CesiumExt('cesiumContainer','')
         })
     }
 

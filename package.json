@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config config/webpack.dev.config.js",
-    "build": "node config/build.js"
+    "build": "node config/build.js",
+    "make-js": "rimraf src/cesiumExt&& tsc -p ./tsconfig.json"
   },
   "author": "",
   "license": "ISC",
